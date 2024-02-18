@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="logo-container">
+        <picture>
+            <source srcset="Screenshot 2024-02-18 120040.webp" type="image/webp">
+            <img src="Screenshot 2024-02-18 120040.png" alt="Logo">
+        </picture>
+    </div>
+    
+    <title>Registration Form</title>
+    <style>
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+       
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-row {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2 style="text-align: center;">Registration Form</h2>
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbx4a8jkfYh3YuQRCBUNH3WH9H0AoqDc2eZVOtYwOaik61hAhagcNucCGx3kTUaE2Q/exec">
+            <div class="form-row">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+                <label for="college_email">College Email ID</label>
+                <input type="email" id="college_email" name="college_email" required>
+            </div>
+            <div class="form-row">
+                <label for="whatsapp_number">WhatsApp Number</label>
+                <input type="tel" id="whatsapp_number" name="whatsapp_number" required>
+            </div>
+            <div class="form-row">
+                <label for="contact_number">Contact Number</label>
+                <input type="tel" id="contact_number" name="contact_number" required>
+            </div>
+            <div class="form-row">
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="year">Year</label>
+                <input type="text" id="year" name="year" required>
+            </div>
+            <div class="form-row">
+                <label for="college">College</label>
+                <input type="text" id="college" name="college" required>
+            </div>
+            <div class="form-row">
+                <label for="cgpa">CGPA/Percentage</label>
+                <input type="text" id="cgpa" name="cgpa" required>
+            </div>
+            <div class="form-row">
+                <label for="domain">Interested Domain</label>
+                <input type="text" id="domain" name="domain" required>
+            </div>
+            <div class="form-row">
+                <label for="mother_tongue">Mother Tongue</label>
+                <input type="text" id="mother_tongue" name="mother_tongue" required>
+            </div>
+            <div class="form-row">
+                <label for="class_leader">Class Leader Name and Number</label>
+                <input type="text" id="class_leader" name="class_leader" required>
+            </div>
+            <div class="form-row">
+                <label for="refer_friends">Refer your friends (Name & Number) to work in the same batch</label>
+                <input type="text" id="refer_friends" name="refer_friends" required>
+            </div>
+            <div class="form-row">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        
+
+    </div>
+</body>
+</html>
